@@ -1,8 +1,5 @@
 function createCounter(n: number): () => number {
-    let incrementedArgument: number = n;
-    return function() {
-        return incrementedArgument++
-    }
+    return () => n++;
 }
 
 
